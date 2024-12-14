@@ -22,7 +22,8 @@
 .container {
   display: flex;
   text-align: center;
-  margin: 30px 100px;
+  margin: 30px 5px;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 @media (min-width: 768px) {
@@ -65,4 +66,53 @@ nav ul {
   text-align: end;
   gap: 50px;
   margin-left: 40%;
+}
+label {
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width:991px) {
+  nav ul {
+    display: none;
+  }
+  label {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  
+  }
+  label .fa-xmark {
+    display :none;
+  }
+
+  #check:checked ~ ul a {
+    margin-right: 35%;
+    color: #ffffff;
+  }
+  #check:checked ~ ul {
+    display: block;
+  }
+  #check:checked ~ ul {
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #292E3D;
+    display: flex;
+  }
+  #check:checked ~ label .fa-xmark {
+    z-index: 9;
+    position: fixed;
+    display: block;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: -47%;
+    color: #2947A9;
+  }
 }
