@@ -41,6 +41,15 @@
     width: 1170px;
   }
 }
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  background-color: #d3d5db;
+}
 .the-box {
   position: relative;
   bottom: 15px;
@@ -55,7 +64,7 @@ a {
   color: var(--title-color);
 }
 .contact-Us {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 li {
   list-style: none;
@@ -82,6 +91,10 @@ label {
     font-size: 25px;
     cursor: pointer;
   
+  }
+  label .fa-bars {
+  position: relative;
+  left: 150px;
   }
   label .fa-xmark {
     display :none;
@@ -115,4 +128,20 @@ label {
     margin-left: -47%;
     color: #2947A9;
   }
+}
+.building-things {
+  background-image: url('../../assets/images/hero.webp');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  flex-wrap: wrap;
+}
+.building-things h1 {
+  width: 70%;
+  position: relative;
+  top: 250px;
+  left: 5%;
+  font-family: var(--font-family);
+  font-size: var(--h1-size);
+  color: var(--title-color);
 }
