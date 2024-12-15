@@ -247,6 +247,8 @@ section {
     .text h3 , .texts h3 {
     display: none;
     }
+  
+  
 }
 .icn ,.icns , .text ,.texts{
   display: flex;
@@ -330,26 +332,30 @@ section {
   left: 30%;
   flex-direction: column;
   text-align: center;
+  
 }
 .experience {
   width: 100%;
   margin-top: -300px;
-  margin-left: 420px;
+  flex-wrap: wrap;
+  /* margin-left: 420px; */
 }
 .experience h2 {
   font-family: var(--font-family);
   font-size: var(--h2-size);
   color: var(--main-color);
+  margin-top: 400px;
 }
 .experience p {
   color: var(--text-color);
 }
 .contact-us {
-  width: 30%;
+  width: 70%;
   margin-top: 50px;
   margin-left: 600px;
   padding: 20px;
   background-color: var(--main-color);
+  margin-left: 30px;
 }
 .contact-u , a {
   font-family: var(--font-family);
@@ -359,22 +365,32 @@ section {
 .free-consultation img {
   width: 100%;
 }
-/* .free-consultation h3 {
-  font-size:var(--h3-size) ;
+.Project {
+  line-height: 40px;
+  margin: 0 0 -250px 5%;
 }
-.free-consultation  p {
-  font-size: var(--alt-text-size);
+.Project h3 {
+  font-family: var(--font-family);
+  font-size: var(--h2-size);
+  color: var(--title-color);
 }
-.free-consultation .consultation {
-
-
-} */
-.free-consultation ,.Just ,.consultation h4  {
+.imges img {
+  padding: 30px;
+}
+  .regano , .Royal {
   font-family: var(--font-family);
   color: var(--white);
-  width: 40%;
-  position: relative;
-  bottom: 200px;
-  line-height: 40px;
-  left: 5%;
+  width: 90%;
+  height: 50px;
+  background-color: var(--main-color);
+  margin-left: 6%;
+  padding: 15px;
+  margin-top: -35px;
+}
+.imges {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  margin-right: 5%;
+  
 }
