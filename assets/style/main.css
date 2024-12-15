@@ -392,5 +392,67 @@ section {
   justify-content: end;
   text-align: center;
   margin-right: 5%;
-  
+  flex-wrap: wrap;
+}
+footer {
+  margin-top: 300px;
+}
+.section-one {
+  height: 400px;
+  text-align: center;
+  background-color: var(--alt-text-color);
+}
+.section-one h2 {
+  font-family: var(--font-family);
+  font-size: var(--h2-size);
+  color: var(--title-color);
+}
+.section-one p {
+  font-size: var(--alt-text-size);
+}
+input {
+  width: 40%;
+  height: 30px;
+}
+.inp  {
+  padding: 20px;
+}
+.sub {
+  border-radius: 6px;
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  background-color: var(--main-color);
+}
+.Address p {
+  line-height: 70px;
+}
+.Address h3 {
+  font-family: var(--font-family);
+  font-size: var(--h3-size);
+  color: var(--main-color);
+  line-height: 70px;
+}
+.Address {
+  margin-left: 5%;
+  display: flex;
+  gap: 40px;
+
+}
+.logos {
+  margin-left: 5%;
+}
+.the-boxs {
+  position: relative;
+  bottom: 15px;
+  font-size: 25px;
+  font-family: var(--font-family);
+  color: var(--main-color);
+}
+.coslal {
+  margin: -70px 0 0 40%;
+  text-align: center;
+}
+.coslal img {
+  padding: 10px;
 }
