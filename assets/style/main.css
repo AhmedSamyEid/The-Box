@@ -54,10 +54,14 @@ header {
   background-color: #d3d5db;
   z-index: 999;
 }
+.logo img {
+  position: relative;
+  left: -70px;
+}
 .the-box {
   position: relative;
   bottom: 15px;
-  left: 5%;
+  left: -50%;
   font-size: 25px;
   font-family: var(--font-family);
   color: var(--main-color);
@@ -98,7 +102,7 @@ label {
   }
   label .fa-bars {
   position: relative;
-  left: 150px;
+  left: 50px;
   }
   label .fa-xmark {
     display :none;
@@ -168,8 +172,10 @@ section {
   width: 20%;
   border: solid 1px #C2C7D6;
 }
+
 .about-Us {
   display: flex;
+
 }
 .about h3 {
   font-size: var(--h2-size);
@@ -194,10 +200,181 @@ section {
   font-family: var(--font-family);
 }
 .more-on {
-  width: 50%;
+  width: 70%;
   padding: 20px;
-  margin: 30px;
+  margin: 0 0 0 10px;
   border-radius: 10px;
 
   background-color: var(--white);
+}
+@media (max-width:991px) {
+  .About-us img {
+    width: 380px;
+  }
+  .about {
+    width: 100%;
+    margin-top: 250px;
+    height: 450px;
+    margin-left: -370px;
+  }
+    .services-icon h2 {
+    position: relative;
+    left: 35%;
+    }
+    .services-icon {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    }
+    .icn {
+    margin-top: 100px;
+    margin-left: -185px;
+    gap: 50px;
+    flex-direction: column;
+    }
+    .icns {
+    margin-top: 100px;
+    gap: 50px;
+    flex-direction: column;
+    margin-left: -50px;
+    }
+    .icn , .wh {
+      width: 20%;
+    }
+    .icns , .bl {
+      width: 20%;
+    }
+    .text h3 , .texts h3 {
+    display: none;
+    }
+}
+.icn ,.icns , .text ,.texts{
+  display: flex;
+  justify-content: space-around;
+}
+.services-icon h2 {
+  font-family: var(--font-family);
+  font-size: var(--h2-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 80px;
+  
+}
+.services-icon {
+
+  background-color: var(--alt-text-color);
+}
+.wh  {
+  background-color: var(--white); 
+  padding: 80px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 5px; 
+  display: inline-block; 
+
+}
+.bl  {
+  background-color: var(--main-color); 
+  padding: 80px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 5px; 
+  display: inline-block; 
+  
+}
+.text {
+  text-align: center;
+  position: relative;
+  bottom: 120px;
+}
+.texts {
+  text-align: center;
+  position: relative;
+  bottom: 120px;
+}
+.z {
+  display: flex;
+}
+.happy-clients {
+  /* margin-left: 40%; */
+  
+  margin-top: 200px;
+  width: 250px;
+  height: 100px;
+  background-color: var(--white);
+  border: solid 1px #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+.happy-clients ,.nmb {
+  position: relative;
+  right: 30%;
+  font-family: var(--font-family);
+  font-size: var(--h1-size);
+}
+.Clients {
+  position: relative;
+  bottom: 60px;
+  left: 20%;
+  font-size: var(--alt-text-size);
+}
+.happy-clients img {
+  position: relative;
+  left: 80%;
+  bottom: 30px;
+  width: 60px;
+}
+.years {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  flex-direction: column;
+  text-align: center;
+}
+.experience {
+  width: 100%;
+  margin-top: -300px;
+  margin-left: 420px;
+}
+.experience h2 {
+  font-family: var(--font-family);
+  font-size: var(--h2-size);
+  color: var(--main-color);
+}
+.experience p {
+  color: var(--text-color);
+}
+.contact-us {
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 600px;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+.contact-u , a {
+  font-family: var(--font-family);
+  font-size: var(--alt-text-size);
+  color: var(--white);
+}
+.free-consultation img {
+  width: 100%;
+}
+/* .free-consultation h3 {
+  font-size:var(--h3-size) ;
+}
+.free-consultation  p {
+  font-size: var(--alt-text-size);
+}
+.free-consultation .consultation {
+
+
+} */
+.free-consultation ,.Just ,.consultation h4  {
+  font-family: var(--font-family);
+  color: var(--white);
+  width: 40%;
+  position: relative;
+  bottom: 200px;
+  line-height: 40px;
+  left: 5%;
 }
